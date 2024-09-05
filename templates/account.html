@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}Account{% endblock %}
+
+{% block main %}
+<div class="container">
+    <h2>Account Details</h2>
+    <p>Username: {{ user.username }}</p>
+    <!-- Add options for password change or other settings if needed -->
+    <a href="{{ url_for('dashboard') }}" class="btn btn-primary">Back to Dashboard</a>
+</div>
+{% endblock %}

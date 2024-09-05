@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome{% endblock %}
+
+{% block main %}
+<div class="container">
+    <h1>Welcome to the Budget Tracker</h1>
+    <p>Track your expenses, set budgets, and manage your finances efficiently.</p>
+    <a href="{{ url_for('register') }}" class="btn btn-primary">Get Started</a>
+    <a href="{{ url_for('login') }}" class="btn btn-secondary">Log In</a>
+</div>
+{% endblock %}
